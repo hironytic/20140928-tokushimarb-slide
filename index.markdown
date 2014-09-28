@@ -244,10 +244,10 @@ ruby a.rb
 
 ## ファイル分割
 
-`a.rb` と `b.rb` を同じディレクトリに置いて
+`b.rb` と `c.rb` を同じディレクトリに置いて
 
 ```
-require './b'
+require './c'
 puts(f "shikoku")
 ```
 
@@ -260,7 +260,7 @@ end
 としておきます
 
 ```sh
-ruby a.rb
+ruby b.rb
 #=> Hello shikoku.rb
 ```
 
