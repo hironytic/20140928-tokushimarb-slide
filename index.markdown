@@ -60,8 +60,8 @@ sudo apt-get install git curl build-essential \
   zlib1g-dev libssl-dev libreadline6-dev \
   libsqlite3-dev postgresql-server-dev-9.3 libxslt1-dev libxml2-dev
 git clone https://github.com/sstephenson/rbenv.git $HOME/.rbenv
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> $HOME/.zshenv
-echo 'eval "$(rbenv init -)"' >> $HOME/.zshenv
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> $HOME/.profile
+echo 'eval "$(rbenv init -)"' >> $HOME/.profile
 exec $SHELL -l
 mkdir -p $HOME/.rbenv/plugins
 git clone https://github.com/sstephenson/ruby-build.git \
@@ -74,6 +74,8 @@ rbenv rehash
 gem install bundler --no-ri --no-rdoc
 rbenv rehash
 ```
+
+`~/.profile` の代わりに `~/.zshenv` を使うなどは適宜読み替えて下さい
 
 
 ## 参考
