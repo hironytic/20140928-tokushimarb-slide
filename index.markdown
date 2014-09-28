@@ -122,6 +122,7 @@ MacかLinux(出来ればメジャーなUbuntuが良い)を使うことを割と�
 ## Homebrew is 便利
 
 ```sh
+brew update
 brew install rbenv
 brew install ruby-build
 ```
@@ -129,6 +130,8 @@ brew install ruby-build
 この後
 
 ```sh
+echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+source ~/.bash_profile
 rbenv install 2.1.3
 # 続きは一緒
 ```
